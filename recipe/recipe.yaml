@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.4.2_b"
+  version: "0.4.3_b"
 
 package:
   name: skyplot
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/1cosmologist/skyplot/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 82478637b67c9045962e507f7da8caa3b4bf73deef133c766cfc1b7165d594cf
+  sha256: 0899e8f1fc983c8400aff0b2db9300636826406805e487ae9e57fc1488991e03
 
 build:
   number: 0
@@ -34,9 +34,9 @@ requirements:
 
 tests:
   - python:
-      python_version: 
-      - ${{ python_min }}.*
-      - "*"
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - skyplot
 
