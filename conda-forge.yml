@@ -5,3 +5,13 @@ github:
 conda_build:
   error_overlinking: true
 conda_forge_output_validation: true
+bot:
+    # can the bot automerge PRs it makes on this feedstock
+    automerge: true
+    # only automerge on successful version PRs, migrations are not automerged
+    automerge: 'version'
+    # only automerge on successful migration PRs, versions are not automerged
+    automerge: 'migration'
+
+    # only open PRs if resulting environment is solvable, useful for tightly coupled packages
+    check_solvable: true
