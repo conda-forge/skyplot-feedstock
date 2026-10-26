@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.4.6_b"
+  version: "0.5.0_b"
 
 package:
   name: skyplot
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/1cosmologist/skyplot/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: cd1662bce25fc01e7c23aa936e5e686c14eb9f58a43cef52ec086de51bab419e
+  sha256: da397cc946c41263940fbfa798c14c727fc15e178354ef92dbfd383dd611c6e6
 
 build:
   number: 0
